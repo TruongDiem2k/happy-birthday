@@ -137,6 +137,6 @@ for (let i = 0; i < MAX_PART_COUNT; i++) particles.push(new FlameParticle());
 // Interval to recover flames if smothered
 setInterval(() => {
     if (particleCount < MAX_PART_COUNT) particleCount += REIGNITE_RATE;
-}, 200);
+}, 100000);
 
 animate();

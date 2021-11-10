@@ -1,18 +1,38 @@
 body {
     display: flex;
     height: 100vh;
-    background: #220404;
+    background: pink;
 
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     overflow: hidden;
+}
+
+#container{
+    position: relative;
+}
+
+audio{
+    position: absolute;
+}
+
+span{
+    display: block;
+    margin-bottom: 4px;
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-70%)
 }
 
 #title {
     font-size: 1.2rem;
-    font-family: 'Noto Serif', serif;
-    color: #b37c27;
-
+    font-family: 'arial', serif;
+    color: black;
+    font-weight: bold;
     position: fixed;
     left: 0;
     right: 0;
@@ -22,7 +42,7 @@ body {
 
 #canvas {
     display: block;
-    margin: 0 auto -500px;
+    margin: 40px auto;
 
     filter: url('#blur') blur(1.5px);
     opacity: 0.9;
@@ -34,8 +54,8 @@ body {
 
 #candle {
     display: block;
-    margin: 0 auto 30px;
-    width: 550px;
+    margin: -260px auto 30px;
+    width: 100px;
     height: auto;
 }
 
